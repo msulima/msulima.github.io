@@ -43,7 +43,7 @@ The simplest way to make your blog public is to use Github pages.
 
 {% highlight bash %}
 git init
-git add _includes _layouts _posts css _config.yml about.md .gitignore
+git add _includes _layouts _posts css _config.yml about.md .gitignore index.html
 git commit -m "First commit"
 git remote add origin https://github.com/$username/$username.git
 git push -u origin master
