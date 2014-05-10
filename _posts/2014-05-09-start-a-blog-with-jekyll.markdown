@@ -4,15 +4,26 @@ title:  "Start a blog with Jekyll"
 date:   2014-05-09 23:15:18
 categories: jekyll tutorials
 ---
+
+## What's Jekyll
+
+[Jekyll] is a static content generator, especially useful for writing blogs. The main idea is to take raw files in developer-friendly format like markdown and compile them to ready-to-publish complete websites. 
+
+This is very convenient when you don't really need a heavy stack with a database and web server with support for some programming language[^comments]. You could write posts in plain HTML, but any later layout changes would be very painful. With Jekyll you can separate your content in markdown files from layout, compile it once, and publish on basically any hosting you like, because it's plain HTML, CSS and JS files.
+
+Another great benefit is that use can [Github Pages][github-pages] for free hosting of your website, which I'll cover later.
+
+### Installation
+
 Run your blog with:
 
 {% highlight bash %}
 jekyll serve --watch
 {% endhighlight %}
 
-_Fun fact:_ if you change site configuration or add new post you have to manually restart the server, `--watch` doesn't help.
+Note that if you change site configuration or add new post you have to manually restart the server, `--watch` doesn't help.
 
-## Basic settings
+### Basic settings
 
 Before you write your first post you might want to fill basic info about yourself and change some environment settings. What I changed in `_config.yml` is:
 
@@ -24,11 +35,9 @@ encoding: utf-8 # If you use Ruby >= 2.0.0 then it's default, but I'm on 1.9.3
 timezone: Europe/Warsaw
 {% endhighlight %}
 
-By default there are also some other settings, but they're pretty self-explaining.
-
 ## First post
 
-`jekyll new blog` command generated a sample markdown file with some content. The easiest way is to rename it and overwrite it's content.
+`jekyll new blog` command generated a sample markdown file with some content in `_posts` directory. The simplest solution is to rename it and overwrite it's content. Note that posts names must be in `YEAR-MONTH-DAY-title.MARKUP` format.
 
 I can't tell you what you want to put there, but the syntax is simply:
 
@@ -36,15 +45,11 @@ I can't tell you what you want to put there, but the syntax is simply:
 * [Liquid] -- template engine with syntax really similar to Django templates.
 * [Front-matter] -- Jekyll's own templating solutions, allows to specify post layout and some extra variables.
 
-## Pushing to production
-
-### Github Pages
+### Publish on Github Pages
 
 [Github Pages][github-pages] is a free of charge service where you can deploy your public website using a Github repository. It will use your `$username/$username.github.io` repo to publish website under `http://$username.github.io` address.
 
 Jekyll is supported out-of-the box, so you just need to commit your blog's source files (without `_site` directory). To start your Github Page firstly [create repository] with name `$username.github.io`.
-
-### Publish
 
 In directory with blog content initialize a git repository, add remote branch that you just created, add all needed files, commit them and push to Github.
 
@@ -63,12 +68,14 @@ Your website should be available under `http://$username.github.io` in 5-15 minu
 
 Drafts
 
-[markdown]:     http://daringfireball.net/projects/markdown/
-[kramdown]:     http://kramdown.gettalong.org/
-[Liquid]:       http://docs.shopify.com/themes/liquid-basics
-[Front-matter]: http://jekyllrb.com/docs/frontmatter/
+[Jekyll]:            http://jekyllrb.com/
+[markdown]:          http://daringfireball.net/projects/markdown/
+[kramdown]:          http://kramdown.gettalong.org/
+[Liquid]:            http://docs.shopify.com/themes/liquid-basics
+[Front-matter]:      http://jekyllrb.com/docs/frontmatter/
 [create repository]: https://github.com/new
-[troubleshooting]: https://help.github.com/articles/troubleshooting-github-pages-build-failures
-[github-pages]: https://help.github.com/articles/troubleshooting-github-pages-build-failures
+[troubleshooting]:   https://help.github.com/articles/troubleshooting-github-pages-build-failures
+[github-pages]:      https://help.github.com/articles/troubleshooting-github-pages-build-failures
 
 [^markdown]: Github Flavored Markdown and others are also available.
+[^comments]: If you want comments, you can include JS scripts provided by Disqus or Google+.
