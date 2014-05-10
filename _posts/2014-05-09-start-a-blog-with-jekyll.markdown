@@ -9,13 +9,29 @@ categories: tutorials jekyll
 
 [Jekyll] is a static content generator, especially useful for writing blogs. The main idea is to take raw files in developer-friendly format like markdown and compile them to ready-to-publish complete websites. 
 
-This is very convenient when you don't really need a heavy stack with a database and web server with support for some programming language[^comments]. You could write posts in plain HTML, but any later layout changes would be very painful. With Jekyll you can separate content in markdown files from presentation logic, compile it once, and publish on basically any hosting you like, because it's simply HTML, CSS and JS files.
+This is very convenient when you don't really need a heavy stack with a database and web server with support for some programming language[^comments]. You could write posts in plain HTML, but any later layout changes would be very painful. With Jekyll you can separate content in markdown files from presentation layer, compile it once, and publish on basically any hosting you like, because it's simply HTML, CSS and JS files.
 
 Another great benefit is that [Github Pages][github-pages] provide free hosting of Jekyll websites, which I'll cover later.
 
 ### Installation
 
-Run your blog with:
+Prerequisites are[^prerequisites]:
+
+* Ruby
+* Ruby devKit
+* Python
+
+Following commands will install Jekyll and bootstrap a sample project (you can replace `blog` with project name):
+
+{% highlight bash %}
+gem install jekyll
+jekyll new blog
+cd blog
+{% endhighlight %}
+
+### Test server
+
+Jekyll comes with a simple HTTP server. This command will start it on [http://localhost:4000](http://localhost:4000), compile your project, and re-compile on file changes:
 
 {% highlight bash %}
 jekyll serve --watch
@@ -25,7 +41,7 @@ Note that if you change site configuration or add new post you have to manually 
 
 ### Basic settings
 
-Before you write your first post you might want to fill basic info about yourself and change some environment settings. What I changed in `_config.yml` is:
+Before writing your first post you might want to fill basic information about yourself and change some environment settings. What I changed in `_config.yml` is:
 
 {% highlight yaml %}
 email: # Empty, because every email harvester could get it
@@ -47,7 +63,7 @@ I can't tell you what you want to put there, but the syntax is:
 
 ### Publish on Github Pages
 
-[Github Pages][github-pages] is a free of charge service where you can deploy your public website using a Github repository. It will use your `$username/$username.github.io` repo to publish website under `http://$username.github.io` address.
+[Github Pages][github-pages] is a free of charge service which allows you to host a website using a Github repository. It will use your `$username/$username.github.io` repo to publish at `http://$username.github.io` address.
 
 Jekyll is supported out-of-the box, so you just need to commit your blog's source files (without `_site` directory). To start your Github Page firstly [create repository] with name `$username.github.io`.
 
@@ -64,9 +80,11 @@ git push -u origin master
 
 Your website should be available under `http://$username.github.io` in 5-15 minutes. Unfortunately there's no way to check progress, so if it doesn't appear you might want to check [troubleshooting] page.
 
-## Further reading
+## Conclusions and further reading
 
 Drafts
+
+## Footnotes
 
 [Jekyll]:            http://jekyllrb.com/
 [markdown]:          http://daringfireball.net/projects/markdown/
@@ -77,5 +95,6 @@ Drafts
 [troubleshooting]:   https://help.github.com/articles/troubleshooting-github-pages-build-failures
 [github-pages]:      https://help.github.com/articles/troubleshooting-github-pages-build-failures
 
+[^comments]: If you need comments, you can include JS scripts provided by Disqus or Google+.
+[^prerequisites]: You should find on Google how to install them.
 [^markdown]: Github Flavored Markdown and others are also available.
-[^comments]: If you want comments, you can include JS scripts provided by Disqus or Google+.
