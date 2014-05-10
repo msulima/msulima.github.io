@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Starting a blog with Jekyll"
+title:  "Start a blog with Jekyll"
 date:   2014-05-09 23:15:18
 categories: tutorials jekyll
 ---
@@ -9,7 +9,7 @@ categories: tutorials jekyll
 
 [Jekyll] is a static content generator, especially useful for writing blogs. The main idea is to take raw files in developer-friendly format like markdown and compile them to ready-to-publish complete websites. 
 
-This is very convenient when you don't really need a heavy stack with a database and web server with support for some programming language[^comments]. You could write posts in plain HTML, but any later layout changes would be very painful. With Jekyll you can separate content in markdown files from layout, compile it once, and publish on basically any hosting you like, because it's plain HTML, CSS and JS files.
+This is very convenient when you don't really need a heavy stack with a database and web server with support for some programming language[^comments]. You could write posts in plain HTML, but any later layout changes would be very painful. With Jekyll you can separate content in markdown files from presentation logic, compile it once, and publish on basically any hosting you like, because it's simply HTML, CSS and JS files.
 
 Another great benefit is that [Github Pages][github-pages] provide free hosting of Jekyll websites, which I'll cover later.
 
@@ -39,7 +39,7 @@ timezone: Europe/Warsaw
 
 `jekyll new blog` command generated a sample markdown file with some content in `_posts` directory. The simplest solution is to rename it and overwrite it's content. Note that posts names must be in `YEAR-MONTH-DAY-title.MARKUP` format.
 
-I can't tell you what you want to put there, but the syntax is simply:
+I can't tell you what you want to put there, but the syntax is: 
 
 * [markdown] -- with [kramdown] implementation as default[^markdown]. You can replace it with textile though.
 * [Liquid] -- template engine with syntax really similar to Django templates.

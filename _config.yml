@@ -1,10 +1,20 @@
-# Site settings
-title: Less is more
-email: 
-username: msulima
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-baseurl: ""
-url: "http://msulima.github.com"
+title:            Less is more
+description:      A jekyll theme. Because I scribble.
+url:              http://msulima.github.com
+signoff:          Mateusz Sulima
+disqus_shortname: # disqus comment thread for post header options. ( leave blank if unwanted. )
+facebook_appid:   # appid for like button, remove from /_includes/share.html if unwanted.
+google_analytics: # set tracking, remove from /javascripts/basic.js if unwanted.
+
+links:
+  - name:         About
+    url:          /about
+  - name:         Twitter
+    url:          https://twitter.com/MateuszSulima
+    external:     true
+  - name:         GitHub
+    url:          http://github.com/msulima
+    external:     true
 
 # Build settings
 markdown: kramdown
