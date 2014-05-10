@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  "Start a blog with Jekyll"
+title:  "Starting a blog with Jekyll"
 date:   2014-05-09 23:15:18
-categories: jekyll tutorials
+categories: tutorials jekyll
 ---
 
 ## What's Jekyll
 
 [Jekyll] is a static content generator, especially useful for writing blogs. The main idea is to take raw files in developer-friendly format like markdown and compile them to ready-to-publish complete websites. 
 
-This is very convenient when you don't really need a heavy stack with a database and web server with support for some programming language[^comments]. You could write posts in plain HTML, but any later layout changes would be very painful. With Jekyll you can separate your content in markdown files from layout, compile it once, and publish on basically any hosting you like, because it's plain HTML, CSS and JS files.
+This is very convenient when you don't really need a heavy stack with a database and web server with support for some programming language[^comments]. You could write posts in plain HTML, but any later layout changes would be very painful. With Jekyll you can separate content in markdown files from layout, compile it once, and publish on basically any hosting you like, because it's plain HTML, CSS and JS files.
 
-Another great benefit is that use can [Github Pages][github-pages] for free hosting of your website, which I'll cover later.
+Another great benefit is that [Github Pages][github-pages] provide free hosting of Jekyll websites, which I'll cover later.
 
 ### Installation
 
