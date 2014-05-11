@@ -19,8 +19,7 @@ body {
   padding: 0; margin: 0;
 }
 img { 
-  border: solid 1px #f1f1f1;
-  box-shadow: 1px 1px 11px #f8f8f8;
+  border: none;
 }
 #go-back-home { margin: 40px 0 0; &:hover { background-image: none; } }
 .capitalize { text-transform: capitalize; }
@@ -235,6 +234,10 @@ section.post, section > p {
   }
   li .highlight { padding: 0 10px; }
   li p { margin-bottom: 5px; }
+}
+section.post img { 
+  border: solid 1px #f1f1f1;
+  box-shadow: 1px 1px 11px #f8f8f8;
 }
 .highlight { margin: 0; padding: 0; }
 pre {

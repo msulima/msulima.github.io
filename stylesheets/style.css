@@ -17,8 +17,7 @@ body {
     -webkit-font-smoothing: antialiased; }
 
 img {
-  border: solid 1px #f1f1f1;
-  box-shadow: 1px 1px 11px #f8f8f8; }
+  border: none; }
 
 #go-back-home {
   margin: 40px 0 0; }
@@ -311,6 +310,10 @@ section.post, section > p {
     padding: 0 10px; }
   section.post li p, section > p li p {
     margin-bottom: 5px; }
+
+section.post img {
+  border: solid 1px #f1f1f1;
+  box-shadow: 1px 1px 11px #f8f8f8; }
 
 .highlight {
   margin: 0;
