@@ -55,11 +55,36 @@ timezone: Europe/Warsaw
 
 `jekyll new blog` command generated a sample markdown file with some content in `_posts` directory. The simplest solution is to rename it and overwrite it's content. Note that posts names must be in `YEAR-MONTH-DAY-title.MARKUP` format.
 
-I can't tell you what you want to put there, but the syntax is: 
+### Content syntax
+
+I can't tell you what you want to write about, but the syntax is: 
 
 * [markdown] -- with [kramdown] implementation as default[^markdown]. You can replace it with textile though.
 * [Liquid] -- template engine with syntax really similar to Django templates.
 * [Front-matter] -- Jekyll's own templating solutions, allows to specify post layout and some extra variables.
+
+Sample post might look like this:
+
+
+{% highlight text %}
+{% raw %}
+---
+layout: post
+title:  "This is Front-matter section"
+date:   2014-05-09 23:15:18
+categories: tutorials jekyll
+---
+
+## Header
+
+Paragraph with **markdown** markup.
+
+{% highlight bash %}
+echo "Content in Liquid tag"
+{% endhighlight %}
+
+{% endraw %}
+{% endhighlight %}
 
 ### Publish on Github Pages
 
@@ -80,9 +105,9 @@ git push -u origin master
 
 Your website should be available under `http://$username.github.io` in 5-15 minutes. Unfortunately there's no way to check progress, so if it doesn't appear you might want to check [troubleshooting] page.
 
-## Conclusions and further reading
+### Final effect
 
-Drafts
+![Final effect](/images/start-a-blog-with-jekyll-1.png)
 
 ## Footnotes
 

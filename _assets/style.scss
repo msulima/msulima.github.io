@@ -1,6 +1,6 @@
 @import "bourbon/bourbon";
 
-$background: #f9f9f9;
+$background: #f8f5ec;
 $content-width: 850px;
 $font-size: 17px;
 $code-background: #f1f1f1;
@@ -18,7 +18,10 @@ body {
   line-height: 19px;
   padding: 0; margin: 0;
 }
-img { border: none; }
+img { 
+  border: solid 1px #f1f1f1;
+  box-shadow: 1px 1px 11px #f8f8f8;
+}
 #go-back-home { margin: 40px 0 0; &:hover { background-image: none; } }
 .capitalize { text-transform: capitalize; }
 .upcase { text-transform: uppercase; }
@@ -244,7 +247,7 @@ pre {
 }
 code { font-size: 85%; font-family: Consolas, monospace; background: $code-background; padding: 2px 4px 3px; border-radius: 2px; line-height: 1.3em; @include inline-block; }
 div.highlight, div.highlight code, div.highlight pre  { background: $code-background; }
-div.highlight  { background: #f1f1f1; }
+div.highlight  { background: $code-background; }
 
 img { 
   max-width: 100%;
