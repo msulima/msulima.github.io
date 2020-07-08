@@ -138,7 +138,7 @@ them at once. This technique has been described by Martin Thompson, which he cal
 [Smart Batching](https://mechanical-sympathy.blogspot.com/2011/10/smart-batching.html).
 It greatly reduces contention on shared resources, which is particularly important when
 writing/reading data to/from a network socket, because each operation invokes a system call,
-and a context switch.
+and a privilege mode switch.
 
 ### Benchmarks
 
