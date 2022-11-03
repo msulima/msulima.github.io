@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f2187fc.css",
-    "main.js": "/static/js/main.fd81244e.js",
-    "static/js/787.1318c572.chunk.js": "/static/js/787.1318c572.chunk.js",
-    "index.html": "/index.html",
-    "main.2f2187fc.css.map": "/static/css/main.2f2187fc.css.map",
-    "main.fd81244e.js.map": "/static/js/main.fd81244e.js.map",
-    "787.1318c572.chunk.js.map": "/static/js/787.1318c572.chunk.js.map"
+    "main.css": "https://msulima.github.io/efc/static/css/main.2f2187fc.css",
+    "main.js": "https://msulima.github.io/efc/static/js/main.d87333a6.js",
+    "static/js/787.1318c572.chunk.js": "https://msulima.github.io/efc/static/js/787.1318c572.chunk.js",
+    "index.html": "https://msulima.github.io/efc/index.html",
+    "main.2f2187fc.css.map": "https://msulima.github.io/efc/static/css/main.2f2187fc.css.map",
+    "main.d87333a6.js.map": "https://msulima.github.io/efc/static/js/main.d87333a6.js.map",
+    "787.1318c572.chunk.js.map": "https://msulima.github.io/efc/static/js/787.1318c572.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2f2187fc.css",
-    "static/js/main.fd81244e.js"
+    "static/js/main.d87333a6.js"
   ]
 }
