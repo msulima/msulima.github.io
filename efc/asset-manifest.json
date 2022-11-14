@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "https://msulima.github.io/efc/static/css/main.2f2187fc.css",
-    "main.js": "https://msulima.github.io/efc/static/js/main.376444cb.js",
+    "main.css": "https://msulima.github.io/efc/static/css/main.8d6d3f14.css",
+    "main.js": "https://msulima.github.io/efc/static/js/main.0c605a64.js",
     "static/js/787.1318c572.chunk.js": "https://msulima.github.io/efc/static/js/787.1318c572.chunk.js",
     "index.html": "https://msulima.github.io/efc/index.html",
-    "main.2f2187fc.css.map": "https://msulima.github.io/efc/static/css/main.2f2187fc.css.map",
-    "main.376444cb.js.map": "https://msulima.github.io/efc/static/js/main.376444cb.js.map",
+    "main.8d6d3f14.css.map": "https://msulima.github.io/efc/static/css/main.8d6d3f14.css.map",
+    "main.0c605a64.js.map": "https://msulima.github.io/efc/static/js/main.0c605a64.js.map",
     "787.1318c572.chunk.js.map": "https://msulima.github.io/efc/static/js/787.1318c572.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f2187fc.css",
-    "static/js/main.376444cb.js"
+    "static/css/main.8d6d3f14.css",
+    "static/js/main.0c605a64.js"
   ]
 }
